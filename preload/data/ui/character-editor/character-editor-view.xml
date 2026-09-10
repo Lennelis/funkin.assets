@@ -19,6 +19,15 @@
         </dropdown>
         <label id="animationWarning" width="300" text="" />
 
+        <section-header text="Position on stage" />
+        <dropdown id="positionDropdown" width="300" height="40" allowFocus="true">
+            <data>
+                <item text="bf" />
+                <item text="dad" />
+                <item text="gf" />
+            </data>
+        </dropdown>
+
         <section-header text="Offset" />
         <hbox width="100%">
             <label id="offsetLabel" width="180" text="0, 0" verticalAlign="center" />

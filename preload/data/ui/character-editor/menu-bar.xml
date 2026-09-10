@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  The character editor's menu bar.
+
+  The same component the chart editor uses along the top of its screen, so the
+  editors share a shape: the things you do to the file live up here rather than
+  being scattered through the panel.
+-->
+<menubar id="menubar" width="100%">
+    <menu text="File">
+        <menu-item id="menuSave" text="Save as mod" />
+        <menu-item id="menuReload" text="Reload character" />
+        <menu-item id="menuExit" text="Exit" />
+    </menu>
+    <menu text="Edit">
+        <menu-item id="menuResetOffset" text="Reset offset" />
+        <menu-item id="menuReplay" text="Replay animation" />
+    </menu>
+    <menu text="View">
+        <menu-item id="menuResetCamera" text="Reset camera" />
+        <menu-item id="menuToggleStage" text="Show or hide the stage" />
+        <menu-item id="menuTogglePanel" text="Show or hide the panel" />
+    </menu>
+</menubar>
