@@ -23,6 +23,9 @@
                 </dropdown>
                 <button id="rescanButton" width="110" height="40" text="Rescan" />
             </hbox>
+            <hbox width="100%">
+                <button id="importButton" width="410" height="40" text="Import a sheet from this device" />
+            </hbox>
 
             <section-header text="Animations found" />
             <label id="sheetSummaryLabel" width="410" text="" />
