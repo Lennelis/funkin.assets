@@ -4,7 +4,7 @@
 
   The same component the chart editor uses along the top of its screen, so the
   editors share a shape: the things you do to the file live up here rather than
-  being scattered through the panel.
+  being scattered through the panels.
 
   The bar spans the screen so it covers the rounded corners rather than ending
   in them, but its padding holds "File" far enough in that the curve is not
@@ -14,7 +14,7 @@
     <menu text="File">
         <menu-item id="menuNew" text="New from sprite sheet" />
         <menu-item id="menuImport" text="Import a sheet from this device" />
-        <menu-item id="menuSave" text="Save as mod" />
+        <menu-item id="menuExport" text="Export character JSON" />
         <menu-item id="menuReload" text="Reload character" />
         <menu-item id="menuExit" text="Exit" />
     </menu>
@@ -31,8 +31,11 @@
       its own button unticks itself here, so the menu is a readout of what is
       open rather than a guess at it — and a new window is one more row.
     -->
-    <menu text="Windows">
+    <menu text="Window">
         <menu-checkbox id="windowCharacter" text="Character" selected="true" />
+        <menu-checkbox id="windowCharacterData" text="Character data" />
+        <menu-checkbox id="windowHealthIcon" text="Health icon" />
+        <menu-checkbox id="windowAnimation" text="Animation" selected="true" />
         <menu-checkbox id="windowNewCharacter" text="New character" />
     </menu>
 </menubar>

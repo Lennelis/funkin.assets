@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  One animation at a time.
+
+  The offset is the thing this window exists for, and it is the one value here
+  you do not type: you drag the character and it follows.
+-->
+<collapsible-dialog id="animationDialog" title="Animation" width="400" height="470">
+    <scrollview width="100%" height="100%" contentWidth="100%" scrollMode="inertial">
+        <vbox width="100%">
+            <section-header text="Animation" />
+            <dropdown id="animationDropdown" width="350" height="40" allowFocus="true">
+                <data />
+            </dropdown>
+            <label id="animationWarning" width="350" text="" />
+
+            <section-header text="Offset" />
+            <hbox width="100%">
+                <label id="offsetLabel" width="120" text="0, 0" verticalAlign="center" />
+                <number-stepper id="animOffsetXStepper" width="105" height="40" step="1" />
+                <number-stepper id="animOffsetYStepper" width="105" height="40" step="1" />
+            </hbox>
+            <button id="resetOffsetButton" width="350" height="40" text="Clear this offset" />
+
+            <section-header text="Frames" />
+            <textfield id="prefixField" width="350" height="40" />
+            <hbox width="100%">
+                <label width="150" text="Frame rate" verticalAlign="center" />
+                <number-stepper id="frameRateStepper" width="160" height="40" step="1" min="1" max="120" />
+            </hbox>
+            <hbox width="100%">
+                <label width="150" text="Loops" verticalAlign="center" />
+                <checkbox id="loopedCheck" />
+            </hbox>
+            <hbox width="100%">
+                <label width="150" text="Flip X" verticalAlign="center" />
+                <checkbox id="animFlipXCheck" />
+            </hbox>
+            <hbox width="100%">
+                <label width="150" text="Flip Y" verticalAlign="center" />
+                <checkbox id="animFlipYCheck" />
+            </hbox>
+
+            <button id="replayButton" width="350" height="46" text="Play it again" />
+            <label id="statusLabel" width="350" text="" />
+        </vbox>
+    </scrollview>
+</collapsible-dialog>
