@@ -10,26 +10,28 @@
 
   Nothing here asks to be typed, either. The name comes from the file.
 -->
-<collapsible-dialog id="newCharacterDialog" title="New character" width="440" height="420">
-    <vbox width="100%" height="100%">
-        <section-header text="Put a sprite sheet here" />
-        <label id="sheetPathLabel" width="410" text="" />
+<collapsible-dialog id="newCharacterDialog" title="New character" width="450" height="420">
+    <scrollview id="newCharacterScroll" width="100%" height="100%" contentWidth="100%" scrollMode="inertial">
+        <vbox width="100%">
+            <section-header text="Put a sprite sheet here" />
+            <label id="sheetPathLabel" width="410" text="" />
 
-        <section-header text="Sheet" />
-        <hbox width="100%">
-            <dropdown id="sheetDropdown" width="290" height="40" allowFocus="true">
-                <data />
-            </dropdown>
-            <button id="rescanButton" width="110" height="40" text="Rescan" />
-        </hbox>
+            <section-header text="Sheet" />
+            <hbox width="100%">
+                <dropdown id="sheetDropdown" width="290" height="40" allowFocus="true">
+                    <data />
+                </dropdown>
+                <button id="rescanButton" width="110" height="40" text="Rescan" />
+            </hbox>
 
-        <section-header text="Animations found" />
-        <label id="sheetSummaryLabel" width="410" text="" />
+            <section-header text="Animations found" />
+            <label id="sheetSummaryLabel" width="410" text="" />
 
-        <hbox width="100%">
-            <button id="createButton" width="290" height="46" text="Create character" />
-            <button id="closeButton" width="110" height="46" text="Close" />
-        </hbox>
-        <label id="newCharacterStatus" width="410" text="" />
-    </vbox>
+            <hbox width="100%">
+                <button id="createButton" width="290" height="46" text="Create character" />
+                <button id="closeButton" width="110" height="46" text="Close" />
+            </hbox>
+            <label id="newCharacterStatus" width="410" text="" />
+        </vbox>
+    </scrollview>
 </collapsible-dialog>
