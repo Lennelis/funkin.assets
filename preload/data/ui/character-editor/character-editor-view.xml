@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  The character editor's toolbox.
+
+  Built like the other editors' panels so it reads as part of the same set,
+  but sized for a thumb rather than a mouse: fewer rows, taller controls, and
+  no keyboard shortcut list, since there is no keyboard.
+-->
+<collapsible-dialog id="characterToolbox" title="Character" width="330" height="560">
+    <vbox width="100%" height="100%">
+        <section-header text="Character" />
+        <dropdown id="characterDropdown" width="300" height="40" allowFocus="true">
+            <data />
+        </dropdown>
+
+        <section-header text="Animation" />
+        <dropdown id="animationDropdown" width="300" height="40" allowFocus="true">
+            <data />
+        </dropdown>
+        <label id="animationWarning" width="300" text="" />
+
+        <section-header text="Offset" />
+        <hbox width="100%">
+            <label id="offsetLabel" width="180" text="0, 0" verticalAlign="center" />
+            <button id="resetOffsetButton" width="110" height="40" text="Reset" />
+        </hbox>
+
+        <section-header text="Character file" />
+        <hbox width="100%">
+            <label width="140" text="Scale" verticalAlign="center" />
+            <number-stepper id="scaleStepper" width="150" height="40" step="0.1" min="0.1" max="20" />
+        </hbox>
+        <hbox width="100%">
+            <label width="140" text="Flip X" verticalAlign="center" />
+            <checkbox id="flipXCheck" />
+        </hbox>
+        <hbox width="100%">
+            <label width="140" text="Sing time" verticalAlign="center" />
+            <number-stepper id="singTimeStepper" width="150" height="40" step="0.5" min="0" max="60" />
+        </hbox>
+        <hbox width="100%">
+            <label width="140" text="Dance every" verticalAlign="center" />
+            <number-stepper id="danceEveryStepper" width="150" height="40" step="1" min="0" max="32" />
+        </hbox>
+
+        <section-header text="Camera offset" />
+        <hbox width="100%">
+            <number-stepper id="cameraXStepper" width="145" height="40" step="5" />
+            <number-stepper id="cameraYStepper" width="145" height="40" step="5" />
+        </hbox>
+
+        <section-header text="Saving" />
+        <button id="saveButton" width="300" height="46" text="Save as mod" />
+        <label id="statusLabel" width="300" text="" />
+    </vbox>
+</collapsible-dialog>
