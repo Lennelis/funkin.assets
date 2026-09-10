@@ -25,6 +25,16 @@
     <menu text="View">
         <menu-item id="menuResetCamera" text="Reset camera" />
         <menu-item id="menuToggleStage" text="Show or hide the stage" />
+        <!--
+          Which slot the character stands in. Up here rather than in the
+          Character window because it is about the view rather than about the
+          character, and because down there it did not fit.
+        -->
+        <menu text="Position on stage">
+            <menu-item id="menuPositionBf" text="Boyfriend" />
+            <menu-item id="menuPositionDad" text="Opponent" />
+            <menu-item id="menuPositionGf" text="Girlfriend" />
+        </menu>
     </menu>
     <!--
       One row per window, ticked while that window is up. A window closed by
@@ -32,10 +42,10 @@
       open rather than a guess at it — and a new window is one more row.
     -->
     <menu text="Window">
-        <menu-checkbox id="windowCharacter" text="Character" selected="true" />
+        <menu-checkbox id="windowCharacter" text="Character" />
         <menu-checkbox id="windowCharacterData" text="Character data" />
         <menu-checkbox id="windowHealthIcon" text="Health icon" />
-        <menu-checkbox id="windowAnimation" text="Animation" selected="true" />
+        <menu-checkbox id="windowAnimation" text="Animation" />
         <menu-checkbox id="windowNewCharacter" text="New character" />
     </menu>
 </menubar>

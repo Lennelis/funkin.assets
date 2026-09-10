@@ -21,6 +21,11 @@
                 <number-stepper id="animOffsetYStepper" width="105" height="40" step="1" />
             </hbox>
             <button id="resetOffsetButton" width="350" height="40" text="Clear this offset" />
+            <hbox width="100%">
+                <label width="150" text="Ghost" verticalAlign="center" />
+                <checkbox id="ghostCheck" />
+            </hbox>
+            <label id="ghostHint" width="350" text="Leaves a see-through copy where the character is now, to drag against." />
 
             <section-header text="Frames" />
             <textfield id="prefixField" width="350" height="40" />
