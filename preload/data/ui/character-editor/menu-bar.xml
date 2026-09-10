@@ -5,8 +5,12 @@
   The same component the chart editor uses along the top of its screen, so the
   editors share a shape: the things you do to the file live up here rather than
   being scattered through the panel.
+
+  The bar spans the screen so it covers the rounded corners rather than ending
+  in them, but its padding holds "File" far enough in that the curve is not
+  sitting on top of the only thing there is to tap.
 -->
-<menubar id="menubar" width="100%">
+<menubar id="menubar" width="100%" style="padding-left: 30px; padding-right: 30px; padding-top: 14px; padding-bottom: 10px;">
     <menu text="File">
         <menu-item id="menuSave" text="Save as mod" />
         <menu-item id="menuReload" text="Reload character" />
