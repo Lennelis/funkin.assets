@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Bringing a character over from Psych Engine or Codename Engine.
+
+  Both engines describe a character with the same facts this game does, laid
+  out differently, so the character file is all this needs: the sheet is a
+  separate ask, and an optional one, since a character whose art is already
+  in this game's folder does not need it again.
+
+  Nothing is written until "Load it in": the character is built in memory so
+  its offsets can be checked first, and File > Export is what puts it
+  anywhere.
+-->
+<collapsible-dialog id="engineImportDialog" title="Import a character" width="450" height="520">
+    <scrollview id="engineImportScroll" width="100%" height="100%" contentWidth="100%" scrollMode="drag">
+        <vbox width="100%">
+            <section-header text="From" />
+            <label id="engineNameLabel" width="410" text="" />
+
+            <section-header text="Character file" />
+            <button id="engineFileButton" width="410" height="56" text="Choose the character file" />
+            <label id="engineFileLabel" width="410" text="Nothing chosen yet." />
+
+            <section-header text="Sprite sheet" />
+            <label width="410" text="Only needed if this game has not got the art already." />
+            <button id="engineSheetButton" width="410" height="56" text="Choose a .png and its .xml" />
+            <label id="engineSheetLabel" width="410" text="Nothing chosen yet." />
+
+            <hbox width="100%">
+                <button id="engineCreateButton" width="290" height="56" text="Load it in" />
+                <button id="engineCloseButton" width="110" height="56" text="Close" />
+            </hbox>
+            <label id="engineImportStatus" width="410" text="" />
+        </vbox>
+    </scrollview>
+</collapsible-dialog>
