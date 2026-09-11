@@ -3,7 +3,7 @@
   The character file itself, minus the parts that have windows of their own.
 -->
 <collapsible-dialog id="characterDataDialog" title="Character data" width="400" height="540">
-    <scrollview width="100%" height="100%" contentWidth="100%" scrollMode="inertial">
+    <scrollview width="100%" height="100%" contentWidth="100%" scrollMode="drag">
         <vbox width="100%">
             <section-header text="Name" />
             <textfield id="nameField" width="350" height="56" />
