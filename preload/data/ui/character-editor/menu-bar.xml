@@ -19,6 +19,7 @@
         <menu-item id="menuExit" text="Exit" />
     </menu>
     <menu text="Edit">
+        <menu-item id="menuUndoOffset" text="Undo offset change" />
         <menu-item id="menuResetOffset" text="Reset offset" />
         <menu-item id="menuReplay" text="Replay animation" />
     </menu>

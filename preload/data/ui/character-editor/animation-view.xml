@@ -5,7 +5,7 @@
   The offset is the thing this window exists for, and it is the one value here
   you do not type: you drag the character and it follows.
 -->
-<collapsible-dialog id="animationDialog" title="Animation" width="400" height="620">
+<collapsible-dialog id="animationDialog" title="Animation" width="400" height="700">
     <scrollview width="100%" height="100%" contentWidth="100%" scrollMode="inertial">
         <vbox width="100%">
             <section-header text="Animation" />
@@ -31,7 +31,17 @@
                 <number-stepper id="animOffsetXStepper" width="105" height="56" step="1" />
                 <number-stepper id="animOffsetYStepper" width="105" height="56" step="1" />
             </hbox>
-            <button id="resetOffsetButton" width="350" height="56" text="Clear this offset" />
+            <hbox width="100%">
+                <button id="undoOffsetButton" width="170" height="56" text="Undo" />
+                <button id="resetOffsetButton" width="170" height="56" text="Clear" />
+            </hbox>
+            <label width="350" text="Copy an offset from" />
+            <hbox width="100%">
+                <dropdown id="copyOffsetDropdown" width="230" height="56" allowFocus="true">
+                    <data />
+                </dropdown>
+                <button id="copyOffsetButton" width="110" height="56" text="Copy" />
+            </hbox>
             <hbox width="100%">
                 <label width="150" text="Ghost" verticalAlign="center" />
                 <checkbox id="ghostCheck" />
