@@ -5,7 +5,7 @@
   The offset is the thing this window exists for, and it is the one value here
   you do not type: you drag the character and it follows.
 -->
-<collapsible-dialog id="animationDialog" title="Animation" width="400" height="540">
+<collapsible-dialog id="animationDialog" title="Animation" width="400" height="620">
     <scrollview width="100%" height="100%" contentWidth="100%" scrollMode="inertial">
         <vbox width="100%">
             <section-header text="Animation" />
@@ -13,6 +13,17 @@
                 <data />
             </dropdown>
             <label id="animationWarning" width="350" text="" />
+            <hbox width="100%">
+                <button id="addAnimationButton" width="170" height="56" text="Add" />
+                <button id="deleteAnimationButton" width="170" height="56" text="Delete" />
+            </hbox>
+
+            <section-header text="Name" />
+            <hbox width="100%">
+                <textfield id="nameField" width="230" height="56" />
+                <button id="renameButton" width="110" height="56" text="Rename" />
+            </hbox>
+            <label id="nameHint" width="350" text="What the game asks for: idle, singLEFT, singDOWN, singUP, singRIGHT." />
 
             <section-header text="Offset" />
             <hbox width="100%">
@@ -33,6 +44,9 @@
                 <label width="150" text="Frame rate" verticalAlign="center" />
                 <number-stepper id="frameRateStepper" width="160" height="56" step="1" min="1" max="120" />
             </hbox>
+            <label width="350" text="Frames to use" />
+            <textfield id="frameIndicesField" width="350" height="56" />
+            <label id="frameIndicesHint" width="350" text="Numbers separated by commas, or blank for all of them." />
             <hbox width="100%">
                 <label width="150" text="Loops" verticalAlign="center" />
                 <checkbox id="loopedCheck" />
