@@ -22,19 +22,21 @@
         <menu-item id="menuResetOffset" text="Reset offset" />
         <menu-item id="menuReplay" text="Replay animation" />
     </menu>
+    <!--
+      Which slot the character stands in lives here rather than in the
+      Character window: it is a fact about the view rather than about the
+      character, and down there it did not fit.
+
+      Spelled out as rows rather than as a submenu because a submenu only
+      opens on hover — the toolkit starts a timer on mouse-over and does
+      nothing at all when an expandable item is clicked — and a touchscreen
+      never hovers, so one could not be opened by a finger at all.
+    -->
     <menu text="View">
         <menu-item id="menuResetCamera" text="Reset camera" />
-        <menu-item id="menuToggleStage" text="Show or hide the stage" />
-        <!--
-          Which slot the character stands in. Up here rather than in the
-          Character window because it is about the view rather than about the
-          character, and because down there it did not fit.
-        -->
-        <menu text="Position on stage">
-            <menu-item id="menuPositionBf" text="Boyfriend" />
-            <menu-item id="menuPositionDad" text="Opponent" />
-            <menu-item id="menuPositionGf" text="Girlfriend" />
-        </menu>
+        <menu-optionbox id="menuPositionBf" text="Stand as boyfriend" componentGroup="stagePosition" selected="true" />
+        <menu-optionbox id="menuPositionDad" text="Stand as the opponent" componentGroup="stagePosition" />
+        <menu-optionbox id="menuPositionGf" text="Stand as girlfriend" componentGroup="stagePosition" />
     </menu>
     <!--
       One row per window, ticked while that window is up. A window closed by
