@@ -16,6 +16,7 @@
         <menu-item id="menuImport" text="Import a sheet from this device" />
         <menu-item id="menuExport" text="Export character JSON" />
         <menu-item id="menuReload" text="Reload character" />
+        <menu-item id="menuPlaytest" text="Playtest in a song" />
         <menu-item id="menuExit" text="Exit" />
     </menu>
     <menu text="Edit">
@@ -50,5 +51,6 @@
         <menu-checkbox id="windowHealthIcon" text="Health icon" />
         <menu-checkbox id="windowAnimation" text="Animation" />
         <menu-checkbox id="windowNewCharacter" text="New character" />
+        <menu-checkbox id="windowPlaytest" text="Playtest" />
     </menu>
 </menubar>

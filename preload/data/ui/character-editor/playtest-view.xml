@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Drop the character into a song.
+
+  The song plays over the editor rather than in place of it, so coming back
+  finds everything as it was left -- which matters, because the offsets being
+  checked have not been written down anywhere yet.
+-->
+<collapsible-dialog id="playtestDialog" title="Playtest" width="400" height="380">
+    <scrollview width="100%" height="100%" contentWidth="100%" scrollMode="inertial">
+        <vbox width="100%">
+            <section-header text="Song" />
+            <dropdown id="playtestSongDropdown" width="350" height="56" allowFocus="true">
+                <data />
+            </dropdown>
+            <label width="350" text="Difficulty" />
+            <dropdown id="playtestDifficultyDropdown" width="350" height="56" allowFocus="true">
+                <data />
+            </dropdown>
+            <hbox width="100%">
+                <label width="250" text="The game plays it" verticalAlign="center" />
+                <checkbox id="playtestBotCheck" selected="true" />
+            </hbox>
+            <label width="350" text="Leave this on to watch the character rather than hit the notes." />
+
+            <button id="playtestButton" width="350" height="56" text="Play the song" />
+        </vbox>
+    </scrollview>
+</collapsible-dialog>
