@@ -51,7 +51,6 @@
         <menu-checkbox id="windowCharacterData" text="Character data" />
         <menu-checkbox id="windowHealthIcon" text="Health icon" />
         <menu-checkbox id="windowAnimation" text="Animation" />
-        <menu-checkbox id="windowNewCharacter" text="New character" />
         <menu-checkbox id="windowPlaytest" text="Playtest" />
     </menu>
 </menubar>
