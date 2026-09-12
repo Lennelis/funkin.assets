@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menubar id="menubar" width="100%" height="35" paddingLeft="256">
+<!--
+  Held in from the left and down from the top for the same reason the
+  chart editor's bar is: a rounded screen corner otherwise sits on top
+  of the first menu. The extra height is the room that padding needs.
+-->
+<menubar id="menubar" width="100%" height="59" style="padding-left: 384px; padding-top: 14px; padding-bottom: 10px;">
   <style>
     .menu {
     // The width of the individual menu items

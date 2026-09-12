@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menubar id="menubar" width="100%" paddingLeft="256">
+<!--
+  The bar spans the screen so it covers the rounded corners rather than
+  ending in them, but its padding holds "File" far enough in and far
+  enough down that the curve is not sitting on top of it.
+-->
+<menubar id="menubar" width="100%" style="padding-left: 384px; padding-top: 14px; padding-bottom: 10px;">
   <style>
     .menu {
     // The width of the individual menu items
